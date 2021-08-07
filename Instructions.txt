@@ -1,0 +1,65 @@
+Instructions for Windows OS
+For additional info or help, please send IM to Sam Adama resident in-world.
+Or use our contact form on Caprica Hypergrid website: https://caprica.1studi.ru/contact-us/
+-----------------------------------
+
+Preparing:
+Register your Avatar here: https://cg.1studi.ru/register
+
+git clone https://github.com/capricagrid/capricaregionwinwin.git
+or
+download zip file: https://github.com/capricagrid/capricaregionwin/archive/refs/heads/master.zip
+unzip files in your folder
+-----------------------------------
+
+Step 1.
+Open ...\capricaregionwin\bin\Regions\Regions.ini
+Please, check the Map first, before enter region location! https://caprica.1studi.ru/simple-map/
+Change Region name, RegionUUID, Location, SizeX;Y, InternalPort and ExternalHostName to your values.
+To generate a UUID for your region, use the Gridlist UUID generator: https://gridlist.ru/uuid/
+Save and exit
+
+Step 2. (optional!)
+Open ...\capricaregionwin\bin\config-include\GridCommon.ini
+[DatabaseService] Select your preferred database server. By default, Caprica Hypergrid regions use the MySQL database server. Create a MySQL database, and provide a username and password in this config file. 
+Save and exit
+
+Step 3
+Open  ...\capricaregionwin\bin\OpenSim.ini
+in line 48 find  http_listener_port and port number, and change it to your port number. Don't forget, this port must be accessible and not blocked by a firewall.
+Save and exit
+
+Step 4
+Make sure that ports 9000, 8003, 8002, the port you specified in OpenSim.ini configuration file and the port of your region are accessible from outside.
+Make sure the settings specified in the "hosts" file are correct:
+    Press the Windows key.
+    Type Notepad in the search field.
+    In the search results, right-click Notepad and select Run as administrator.
+    From Notepad, open the following file: c:\Windows\System32\Drivers\etc\hosts.
+    Make the necessary changes to the file.
+
+127.0.0.1   localhost
+[your external IP]   localhost
+
+    Select File > Save to save your changes.
+
+
+
+Step 5
+Start OpenSim.exe in /bin folder
+
+Enter the Estate name.
+Enter the first and second name of your avatar registered with Caprica Hypergrid.
+Wait for the message "Login enabled" in the terminal.
+If you encounter error messages while starting your region, check your settings carefully again.
+
+
+Step 6
+Add the CapricaHypergrid address (http://cg.1studi.ru:9000) to your client's grid list as shown in step 2 of this tutorial: https://caprica.1studi.ru/services/addcaprica/
+
+Step 7
+Login to Caprica Hypergrid with your avatar and find your region on the map by entering your region name. Teleport and make additional settings if desired.
+
+Step 8
+Enjoy your Virtual World!
+
