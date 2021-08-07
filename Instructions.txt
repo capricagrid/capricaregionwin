@@ -6,6 +6,9 @@ Or use our contact form on Caprica Hypergrid website: https://caprica.1studi.ru/
 Preparing:
 Register your Avatar here: https://cg.1studi.ru/register
 
+Pay attention!
+In order to start a hypergrid region connected to Caprica Hypergrid, you need to have a static IP address. Make sure you have it. Dynamic addresses are not suitable for this purpose.
+
 git clone https://github.com/capricagrid/capricaregionwinwin.git
 or
 download zip file: https://github.com/capricagrid/capricaregionwin/archive/refs/heads/master.zip
