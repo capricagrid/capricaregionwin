@@ -1,10 +1,14 @@
 ## Caprica Hypergrid Region
+
 Caprica Hypergrid Opensimulator self-hosted region. **Windows**
 
 
 Opensimulator server distribution kit for connecting regions to the Caprica Hypergrid.
+
 See current version in "version.txt".
+
 See "[Instructions.txt](https://github.com/capricagrid/capricaregionwin/blob/master/Instructions.txt "Instructions.txt")"  for region install and setup.
+
 **Linux version**: https://github.com/capricagrid/capricaregion
 
 
