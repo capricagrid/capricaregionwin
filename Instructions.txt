@@ -1,10 +1,10 @@
 Instructions for Windows OS
 For additional info or help, please send IM to Sam Adama resident in-world.
-Or use our contact form on Caprica Hypergrid website: https://caprica.1studi.ru/contact-us/
+Or use our contact form on Caprica Hypergrid website: https://caprica.xyz/contact-us/
 -----------------------------------
 
 Preparing:
-Register your Avatar here: https://cg.1studi.ru/register
+Register your Avatar here: https://g.caprica.xyz/account/register
 
 Pay attention!
 In order to start a hypergrid region connected to Caprica Hypergrid, you need to have a static IP address.
@@ -18,7 +18,7 @@ unzip files in your folder
 
 Step 1.
 Open ...\capricaregionwin\bin\Regions\Regions.ini
-Please, check the Map first, before enter region location! https://caprica.1studi.ru/simple-map/
+Please, check the Map first, before enter region location! https://caprica.xyz/simple-map/
 Change Region name, RegionUUID, Location, SizeX;Y, InternalPort and ExternalHostName to your values.
 To generate a UUID for your region, use the Gridlist UUID generator: https://gridlist.ru/uuid/
 Save and exit
@@ -59,7 +59,7 @@ If you encounter error messages while starting your region, check your settings 
 
 
 Step 6
-Add the CapricaHypergrid address (http://cg.1studi.ru:9000) to your client's grid list as shown in step 2 of this tutorial: https://caprica.1studi.ru/services/addcaprica/
+Add the CapricaHypergrid address (http://g.caprica.xyz:9000) to your client's grid list as shown in step 2 of this tutorial: https://caprica.xyz/services/addcaprica/
 
 Step 7
 Login to Caprica Hypergrid with your avatar and find your region on the map by entering your region name. Teleport and make additional settings if desired.
