@@ -45,9 +45,11 @@ PKCS#12 certificate valid for your region's `ExternalHostName`). This is
 optional: visitors can reach your region over plain HTTP, HTTPS for the region
 itself is not required to connect to Caprica.
 
-**Database:** MySQL is effectively **required** — the bundled
-`OpenSim.Data.SQLite.dll` has no OfflineIM storage backend, so the region
-crashes on startup under SQLite.
+**Database:** SQLite is the default — no setup needed, `*.db` files are
+created inside `bin\`. The bundled `OpenSim.Data.SQLite.dll` has no OfflineIM
+backend, so `OfflineMessageModule` in `OpenSim.ini [Messaging]` must be set
+to `""` (the region crashes otherwise); offline messages won't work. Configure
+MySQL per `Instructions.txt` Step 2 if you need offline IM.
 
 
 ------------
