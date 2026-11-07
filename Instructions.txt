@@ -10,7 +10,24 @@ Pay attention!
 In order to start a hypergrid region connected to Caprica Hypergrid, you need to have a static IP address.
 Make sure you have it. Dynamic addresses are not suitable for this purpose.
 
-git clone https://github.com/capricagrid/capricaregionwinwin.git
+Running WITHOUT a domain (IP only)?
+A domain name is NOT required - ExternalHostName may be a plain IP address.
+Visitors will reach your region as http://<your-ip>:<port>/ and HG teleports
+work the same way. The connection FROM your region TO Caprica is unaffected:
+it always goes to g.caprica.xyz:9000 over HTTPS regardless of your address.
+
+Notes for IP-only setups:
+- Enter your external IP as ExternalHostName in Regions.ini.
+- The hosts file entry "<your external IP>   localhost" is REQUIRED - OpenSim
+  resolves its own ExternalHostName locally (see Step 4).
+- Do NOT enable http_listener_ssl for your region's own port: publicly trusted
+  TLS certificates are not issued for bare IP addresses, and a self-signed
+  certificate will cause warnings in viewers. Plain HTTP on your own port is
+  fine - only the Caprica-facing side needs HTTPS (already configured).
+- Keep Windows Update / root certificates current so the system trusts the
+  Let's Encrypt certificate used by g.caprica.xyz.
+
+git clone https://github.com/capricagrid/capricaregionwin.git
 or
 download zip file: https://github.com/capricagrid/capricaregionwin/archive/refs/heads/master.zip
 unzip files in your folder
