@@ -40,10 +40,14 @@ Change Region name, RegionUUID, Location, SizeX;Y, InternalPort and ExternalHost
 To generate a UUID for your region, use the Gridlist UUID generator: https://gridlist.ru/uuid/
 Save and exit
 
-Step 2. (optional!)
+Step 2. (REQUIRED - MySQL)
 Open ...\capricaregionwin\bin\config-include\GridCommon.ini
-[DatabaseService] Select your preferred database server. By default, Caprica Hypergrid regions use the MySQL database server. Create a MySQL database, and provide a username and password in this config file. 
-Save and exit
+[DatabaseService] MySQL is REQUIRED: the bundled SQLite provider has no OfflineIM
+storage backend and the region will crash on startup with it
+("Could not find a storage interface in OpenSim.Data.SQLite.dll").
+Install MySQL, create a database and user, uncomment
+StorageProvider/ConnectionString and fill in your credentials.
+OpenSim creates the tables automatically on first start.
 
 Step 3
 Open  ...\capricaregionwin\bin\OpenSim.ini
