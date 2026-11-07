@@ -59,7 +59,7 @@ If you encounter error messages while starting your region, check your settings 
 
 
 Step 6
-Add the CapricaHypergrid address (http://g.caprica.xyz:9000) to your client's grid list as shown in step 2 of this tutorial: https://caprica.xyz/services/addcaprica/
+Add the CapricaHypergrid address (https://g.caprica.xyz:9000) to your client's grid list as shown in step 2 of this tutorial: https://caprica.xyz/services/addcaprica/
 
 Step 7
 Login to Caprica Hypergrid with your avatar and find your region on the map by entering your region name. Teleport and make additional settings if desired.
