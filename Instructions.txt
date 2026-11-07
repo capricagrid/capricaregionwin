@@ -54,11 +54,11 @@ OpenSim creates the MySQL tables automatically on first start.
 
 Step 3
 Open  ...\capricaregionwin\bin\OpenSim.ini
-in line 48 find  http_listener_port and port number, and change it to your port number. Don't forget, this port must be accessible and not blocked by a firewall.
+in line 48 find  http_listener_port and port number, and change it to your port number. Don't forget, this port must be accessible for BOTH TCP (HTTP) and UDP (simulator) - a TCP-only rule lets the region register but teleports hang and time out.
 Save and exit
 
 Step 4
-Make sure that ports 9000, 8003, 8002, the port you specified in OpenSim.ini configuration file and the port of your region are accessible from outside.
+Make sure that ports 9000, 8003, 8002, the port you specified in OpenSim.ini configuration file and the port of your region are accessible from outside - the region port needs BOTH TCP and UDP open.
 Make sure the settings specified in the "hosts" file are correct:
     Press the Windows key.
     Type Notepad in the search field.
